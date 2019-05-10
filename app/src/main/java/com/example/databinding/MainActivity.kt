@@ -15,7 +15,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
 
     lateinit var scoreViewModel: ScoreViewModel
-    //var binding : ActivityMainBinding = DataBindingUtil.setContentView(this@MainActivity, R.layout.activity_main)
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
 
         scoreViewModel = ViewModelProviders.of(this).get(ScoreViewModel::class.java)
 
-       var binding : ActivityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+        var binding : ActivityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
         binding.teams = scoreViewModel
 
